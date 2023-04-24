@@ -42,3 +42,6 @@ class StringServer {
     }
 }
 ```
+<img width="412" alt="image" src="https://user-images.githubusercontent.com/130111798/233875539-f57c2294-cfa9-4afa-912e-037aa9ae773d.png">
+
+<img width="482" alt="image" src="https://user-images.githubusercontent.com/130111798/233875530-4dba40a8-e703-4c23-bf81-69e1d8bed10c.png">
