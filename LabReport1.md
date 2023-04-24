@@ -11,3 +11,9 @@ Then click the Additional Account beginning with cs15lsp23 to where the screen w
 <img width="690" alt="image" src="https://user-images.githubusercontent.com/130111798/230988953-8aa2dd7d-42c8-4bfe-8f63-f47314fe01bb.png">
 
 and then click the Global Password Change Tool to change the password
+
+### 2. Verify that VSCode is Installed
+Use this website https://code.visualstudio.com/ if not installed
+The interface should appear as:
+  <img width="989" alt="image" src="https://user-images.githubusercontent.com/130111798/230989607-5aeb903c-7c29-4c4c-9169-d179b364974b.png">
+  I already had the application installed so I skipped this step
