@@ -38,3 +38,14 @@ Next remotely connect with the course account we found in step 1:
      - type "yes" and enter
 - Then your screen should look similar to this:
   <img width="545" alt="image" src="https://user-images.githubusercontent.com/130111798/230992462-de641f41-8c12-4a26-a0ba-22b05a8dc928.png">
+
+### 4. Run Commands
+- ```cd ~ ``` goes into the root directory
+- ```ls -a ``` lists all of the things inside the directory
+- ![image](https://user-images.githubusercontent.com/130111798/233200598-5a4cb75d-ee2c-4849-9729-06c460ec38c0.png)
+- ```ls -tal ``` (shown below) 
+     - lists all of the files in long format sorted by the time they were edited
+    <img width="485" alt="image" src="https://user-images.githubusercontent.com/130111798/230994408-c69d3c8e-875a-4a52-9a2d-1e51f11221b8.png">
+
+- https://www.inmotionhosting.com/support/server/linux/ls-command/
+     - helpful link in seeing different commands and what they mean, sourced to find what -tal does
