@@ -1,4 +1,4 @@
-# Lab Report 1 - Remote Access and FileSystem (Week 1)
+# Lab Report 2 - Servers and Bugs (Week 3)
 due Monday, April 24 by 11:59pm
 
 ### Part 1 - String Server
