@@ -52,14 +52,7 @@ The same values changed, with ```str``` changing from "Hello" to "Hello /n hello
 
 ### Part 2 - Fixing Bugs
 The bug that I chose was in the method reverseInPlace. 
-The original code was: 
-```// Changes the input array to be in reversed order
-  static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
-    }
-  }
-  ```
+
 A failure-inducing input for the buggy program was..
 ```
    int[] input2 = { 1, 2 };
@@ -68,14 +61,34 @@ A failure-inducing input for the buggy program was..
 ```
 An input that doesn't induce a failure was..
 ```
-   int[] input2 = { 1 };
+   int[] input2 = { 3 };
    ArrayExamples.reverseInPlace(input2);
-   assertArrayEquals(new int[]{1}, input2);
+   assertArrayEquals(new int[]{3}, input2);
 ```
+<img width="412" alt="image" src="https://user-images.githubusercontent.com/130111798/234188579-8f74d89d-fb24-450e-89ac-ea7c30f2820f.png">
 
-The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
-The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
-Briefly describe why the fix addresses the issue.
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/130111798/234188650-663104ed-d04a-4552-82a2-39a0342dac9f.png">
+
+The original code was: 
+```// Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+  ```
+ 
+The fixed code was:
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length/2; i += 1) {
+      int temp = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = temp;
+    }
+  }
+  ```
+The fix addresses the issue, because the code originally was that it would reverse the array list, but then would turn the other half of the list back into not being in order. My fix was to have the for loop only go through the length divided by 2 in integer division so that it wouldn't update already updated values, and added a temporary variable so that the code would update both sides of the array list at once only needing half the iterations.
 
 ### Part 3 - Reflection
 Something I learned that I didn't know before, was how servers were made. It was interesting how the data from variables are saved so that the data can be updated without deleting previous information.
