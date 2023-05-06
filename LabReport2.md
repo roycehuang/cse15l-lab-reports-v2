@@ -76,7 +76,8 @@ The original code was:
       arr[i] = arr[arr.length - i - 1];
     }
   }
-  ```
+ 
+```
  
 The fixed code was:
 ```
