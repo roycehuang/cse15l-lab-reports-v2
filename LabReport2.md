@@ -70,6 +70,7 @@ An input that doesn't induce a failure was..
 <img width="883" alt="image" src="https://user-images.githubusercontent.com/130111798/234188650-663104ed-d04a-4552-82a2-39a0342dac9f.png">
 
 The original code was: 
+
 ```// Changes the input array to be in reversed order
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
@@ -80,6 +81,7 @@ The original code was:
 ```
  
 The fixed code was:
+
 ```
 static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length/2; i += 1) {
@@ -89,6 +91,7 @@ static void reverseInPlace(int[] arr) {
     }
   }
   ```
+
 The fix addresses the issue, because the code originally was that it would reverse the array list, but then would turn the other half of the list back into not being in order. My fix was to have the for loop only go through the length divided by 2 in integer division so that it wouldn't update already updated values, and added a temporary variable so that the code would update both sides of the array list at once only needing half the iterations.
 
 ### Part 3 - Reflection
