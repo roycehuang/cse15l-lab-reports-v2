@@ -67,6 +67,8 @@ An input that doesn't induce a failure was..
 ```
 <img width="412" alt="image" src="https://user-images.githubusercontent.com/130111798/234188579-8f74d89d-fb24-450e-89ac-ea7c30f2820f.png">
 
+<img width="334" alt="image" src="https://github.com/roycehuang/cse15l-lab-reports-v2/assets/130111798/fe5b7147-b872-4caa-bebd-28c3c2a8d509">
+
 <img width="971" alt="image" src="https://github.com/roycehuang/cse15l-lab-reports-v2/assets/130111798/b1168298-d238-4452-96cd-0c74daddd947">
 
 The original code was: 
