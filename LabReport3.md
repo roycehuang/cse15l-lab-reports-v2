@@ -1,29 +1,28 @@
 # Lab Report 3 - Researching Commands (Week 3)
 due Wednesday, May 10 by 10pm
 
-### 1. Command less
 4 command-line options or alternate ways to the command less:
 
-**more : it is the same as the command less, but doesn't allow the user to go back up through the file, only scroll down. In the same way as less, can exit by typing "q".**
+### 1. more : it is the same as the command less, but doesn't allow the user to go back up through the file, only scroll down. In the same way as less, can exit by typing "q".
 
 <img width="1083" alt="image" src="https://github.com/roycehuang/cse15l-lab-reports-v2/assets/130111798/f7faa078-4dae-41e1-94df-b15d4a1c7800">
 
 <img width="714" alt="image" src="https://github.com/roycehuang/cse15l-lab-reports-v2/assets/130111798/3c4009f1-aeab-4052-a900-b21d21f54a05">
 
-**cat : prints the entire file contents as strings, but doesn't allow the user to traverse through the file.**
+### 2. cat : prints the entire file contents as strings, but doesn't allow the user to traverse through the file.
 
 <img width="748" alt="image" src="https://github.com/roycehuang/cse15l-lab-reports-v2/assets/130111798/ed589dc1-5398-4016-b2b9-917124c4f898">
 
 <img width="693" alt="image" src="https://github.com/roycehuang/cse15l-lab-reports-v2/assets/130111798/ab05154d-53a6-4332-bd99-e9be2d541bc3">
 
-**head : shows the first n amount of lines, defaulted to the first 10.**
+### 3. head : shows the first n amount of lines, defaulted to the first 10.
 
 <img width="728" alt="image" src="https://github.com/roycehuang/cse15l-lab-reports-v2/assets/130111798/ce2a042b-6cdf-4e63-b406-f244d3677ff5">
 
 <img width="699" alt="image" src="https://github.com/roycehuang/cse15l-lab-reports-v2/assets/130111798/573ac7bb-2891-4c93-9eee-1913ca4ea630">
 
 
-**tail : shows the last n amount of lines, defaulted to the last 10.**
+### 4. tail : shows the last n amount of lines, defaulted to the last 10.
 
 <img width="699" alt="image" src="https://github.com/roycehuang/cse15l-lab-reports-v2/assets/130111798/a298da1b-6baf-4641-afa7-8f6d611a9635">
 
