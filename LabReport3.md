@@ -3,6 +3,7 @@ due Wednesday, May 10 by 10pm
 
 ### 1. Command less
 4 command-line options or alternate ways to the command less:
+
 **more : it is the same as the command less, but doesn't allow the user to go back up through the file, only scroll down. In the same way as less, can exit by typing "q".**
 
 <img width="1083" alt="image" src="https://github.com/roycehuang/cse15l-lab-reports-v2/assets/130111798/f7faa078-4dae-41e1-94df-b15d4a1c7800">
