@@ -233,9 +233,13 @@ Boarding the Flights
 The command line option -q quiets the error messages, such as when the user attempts to open a directory. This could be useful so that the user knows they attempted to open a directory specifically without throwing an error message.
 ### Resources
 Relied mostly on ChatGPT and some googling to find information on alternative methods.
+
 https://phoenixnap.com/kb/less-command-in-linux 
+
 **prompt:** command line options for less
+
 **response:** 
+
 The less command is a pager utility in Unix and Linux systems that allows you to view text files interactively. Here are some common command line options for less:
 
 -F: Automatically exit less if the entire file can be displayed on one screen.
