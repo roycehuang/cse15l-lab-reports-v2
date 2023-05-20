@@ -1,4 +1,4 @@
-# Lab Report 3 - Researching Commands (Week 3)
+# Lab Report 3 - Researching Commands (Week 5)
 due Wednesday, May 10 by 10pm
 
 4 command-line options or alternate ways to the command ```less```:
