@@ -128,14 +128,97 @@ input:
 less -S ./technical/911report/chapter-1.txt
 ```
 output:
+```     
+                
+"WE HAVE SOME PLANES"
+
+    Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eastern United>
+
+    For those heading to an airport, weather conditions could not have been better for a saf>
+
+INSIDE THE FOUR FLIGHTS
+
+Boarding the Flights
+
+    Boston: American 11 and United 175. Atta and Omari boarded a 6:00 A.M. flight from Portl>
+
+    When he checked in for his flight to Boston, Atta was selected by a computerized prescre>
+
+    Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently took a ca>
+
+    It would be their final conversation.
+
+    Between 6:45 and 7:40, Atta and Omari, along with Satam al Suqami, Wail al Shehri, and W>
+
+    In another Logan terminal, Shehhi, joined by Fayez Banihammad, Mohand al Shehri, Ahmed a>
+
+    Their flight was scheduled to depart at 8:00.
+./technical/911report/chapter-1.txt
 ```
+_example 2:_
+input:
+```
+less -S ./technical/911report/chapter-2.txt
+```
+output:
+```
+
+    
+        
+            THE FOUNDATION OF THE NEW TERRORISM
+            A DECLARATION OF WAR
+            In February 1998, the 40-year-old Saudi exile Usama Bin Ladin and a fugitive Egy>
+                physician, Ayman al Zawahiri, arranged from their Afghan headquarters for an>
+                newspaper in London to publish what they termed a fatwa issued in the name o>
+                "World Islamic Front." A fatwa is normally an interpretation of Islamic law >
+                respected Islamic authority, but neither Bin Ladin, Zawahiri, nor the three >
+                who signed this statement were scholars of Islamic law. Claiming that Americ>
+                declared war against God and his messenger, they called for the murder of any
+                American, anywhere on earth, as the "individual duty for every Muslim who ca>
+                in any country in which it is possible to do it."
+            
+            Three months later, when interviewed in Afghanistan by ABC-TV, Bin Ladin enlarge>
+                these themes.
+            
+            He claimed it was more important for Muslims to kill Americans than to kill other
+                infidels." It is far better for anyone to kill a single American soldier tha>
+                squander his efforts on other activities," he said. Asked whether he approve>
+                terrorism and of attacks on civilians, he replied:"We believe that the worst>
+                in the world today and the worst terrorists are the Americans. Nothing could>
+                you except perhaps retaliation in kind. We do not have to differentiate betw>
+                military or civilian. As far as we are concerned, they are all targets." Not>
+                Islamic names often do not follow the Western practice of the consistent use>
+```
+The -S command line option truncates the lines to the edge of the terminal viewer. This is useful in cases when the user doesn't need to know the entire line and can recognize it based on the beginning of it. This function makes viewing larger files with long lines of text easier.
+
+### 4. ```less -q```
+_example 1:_
+
+input:
+```
+less -q ./technical/911report/
+```
+output:
+```
+./technical/911report/ is a directory
+```
+
+_example 2:_
+
+input:
+```
+less -q ./technical/911report/chapter-1.txt
+```
+output:
+```
+
         
                 
 "WE HAVE SOME PLANES"
 
-    Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eastern United States. Millions of men and women readied themselves >
+    Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eastern United States. Millions of men and women readied themselves for work. Some made their way to the Twin Towers, the signature structures of the World Trade Center complex in New York City. Others went to Arlington, Virginia, to the Pentagon. Across the Potomac River, the United States Congress was back in session. At the other end of Pennsylvania Avenue, people began to line up for a White House tour. In Sarasota, Florida, President George W. Bush went for an early morning run.
 
-    For those heading to an airport, weather conditions could not have been better for a safe and pleasant journey. Among the travelers were Moham>
+    For those heading to an airport, weather conditions could not have been better for a safe and pleasant journey. Among the travelers were Mohamed Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Maine.
 
 INSIDE THE FOUR FLIGHTS
 
@@ -143,51 +226,44 @@ Boarding the Flights
 
     Boston: American 11 and United 175. Atta and Omari boarded a 6:00 A.M. flight from Portland to Boston's Logan International Airport.
 
-    When he checked in for his flight to Boston, Atta was selected by a computerized prescreening system known as CAPPS (Computer Assisted Passeng>
-
-    Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently took a call from Marwan al Shehhi, a longtime colleague who was>
-
-    It would be their final conversation.
-
-    Between 6:45 and 7:40, Atta and Omari, along with Satam al Suqami, Wail al Shehri, and Waleed al Shehri, checked in and boarded American Airli>
-
-    In another Logan terminal, Shehhi, joined by Fayez Banihammad, Mohand al Shehri, Ahmed al Ghamdi, and Hamza al Ghamdi, checked in for United A>
-
-    Their flight was scheduled to depart at 8:00.
+    When he checked in for his flight to Boston, Atta was selected by a computerized prescreening system known as CAPPS (Computer Assisted Passenger Prescreening System), created to iden
+./technical/911report/chapter-1.txt
 ```
-_example 2:_
-input:
-
-output:
-
-### 4. tail : shows the last n amount of lines, defaulted to the last 10.
-
-<img width="699" alt="image" src="https://github.com/roycehuang/cse15l-lab-reports-v2/assets/130111798/a298da1b-6baf-4641-afa7-8f6d611a9635">
-
-<img width="728" alt="image" src="https://github.com/roycehuang/cse15l-lab-reports-v2/assets/130111798/76268b90-9bf6-405c-9f45-8cb38d30c905">
-
+The command line option -q quiets the error messages, such as when the user attempts to open a directory. This could be useful so that the user knows they attempted to open a directory specifically without throwing an error message.
 ### Resources
 Relied mostly on ChatGPT and some googling to find information on alternative methods.
 https://phoenixnap.com/kb/less-command-in-linux 
-**prompt:** what are four alternate ways of doing the command less in terminal
+**prompt:** command line options for less
 **response:** 
-Here are four alternate ways to use the less command in a terminal:
+The less command is a pager utility in Unix and Linux systems that allows you to view text files interactively. Here are some common command line options for less:
 
-more: This command is similar to less but has fewer features. It allows you to scroll through a file one page at a time by pressing the spacebar. However, unlike less, you cannot scroll back up through the file.
+-F: Automatically exit less if the entire file can be displayed on one screen.
 
-cat: This command simply prints the contents of a file to the terminal. Unlike less, you cannot scroll through the file, and the entire file is printed at once.
+-N: Display line numbers on the left side of the screen.
 
-head: This command allows you to view the first few lines of a file. By default, it will show you the first 10 lines, but you can specify a different number with the -n option.
+-S: Truncate long lines instead of wrapping them.
 
-tail: This command allows you to view the last few lines of a file. By default, it will show you the last 10 lines, but you can specify a different number with the -n option.
+-i: Ignore case when searching.
 
-Note that while more, cat, head, and tail are similar to less, they have different features and use cases. less is more versatile than these commands as it allows you to scroll forwards and backwards through a file, search for text, and more.
+-r: Display raw control characters. Useful for viewing files with escape sequences.
 
-Consider the commands less, find, and grep. Choose one of them. 
-Online, find 4 interesting command-line options or alternate ways to use the command you chose. 
-For example, we saw the -name option for find in class. For each of those options, give 2 examples of using it 
-on files and directories from ./technical. Show each example as a code block that shows the command and its output, 
-and write a sentence or two about what it’s doing and why it’s useful.
+-X: Do not clear the screen before displaying file contents.
+
+-M: Show more detailed prompt information, including percentage and line numbers.
+
+-P <string>: Specify a custom prompt string to be displayed at the bottom of the screen.
+
+-e: Quit less immediately if the input file is empty.
+
+-h: Display a short help message with command line options.
+
+-q: Run less in quiet mode, suppressing error messages.
+
+These are just a few examples of the command line options available for less. You can combine multiple options together as needed. For more detailed information on less and its command line options, you can refer to the less manual or help documentation:
+
+Copy code
+man less
+This will display the manual page for less and provide comprehensive documentation on its usage, options, and navigation commands.
 
 **How I changed the output:**
-After reading the information over, I typed out what I learned in my own wording rather than using the same terminology, and added information that I found out during lab, such as how q ends the commands more or less that allow the user to scroll through sections of text at a time.
+After reading the information over, I typed out what I learned from my own understanding rather than using the same exact terminology.
