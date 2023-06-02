@@ -5,6 +5,8 @@ due Monday, May 22 by 10pm
 
 keys pressed: ```ssh cs15lsp23mf@ieng6.ucsd.edu <enter>``` 
 in order to ssh into the account
+I didn't have to enter a password because I followed the steps from the Week 7 lab to use an SSH key for my ieng6 account.
+https://ucsd-cse15l-s23.github.io/week/week7/
 
 ### Step 5: Clone your fork of the repository from your Github account
 <img width="722" alt="image" src="https://github.com/roycehuang/cse15l-lab-reports-v2/assets/130111798/762282a2-be07-4224-ba24-d988c76c0031">
@@ -23,6 +25,7 @@ in order to run the tests
 
 keys pressed: ```vim ListExamples.java <enter>``` in order to make edits to the file to fix the failing test ```/index1 += <enter> <n> <n> <rightarrow> <rightarrow> <rightarrow> <rightarrow> <rightarrow> <rightarrow> <i> <backspace> <2> <escape> :wq!``` edited the file and made the change, then saved and quit vim editor. 
 
+by using ```/index1 += ``` the / command under the normal mode searches for the string following it. In this case it searched for instances of "index1 += ", and by pressing the key "n" vim goes to the next instance of the string. Then, using right arrows to get to the location of where to edit, we enter the insert mode using "i" and delete once to delete the 1 after index and replace it with 2. Then click escape to return to the normal mode and press ```:wq!``` in order to save and quit vim editor.
 ### Step 8: Run the tests, demonstrating that they now succeed
 <img width="337" alt="image" src="https://github.com/roycehuang/cse15l-lab-reports-v2/assets/130111798/f67387a3-d8cf-496a-9409-0eea986f2b50">
 
