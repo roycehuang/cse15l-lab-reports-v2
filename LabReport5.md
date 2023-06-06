@@ -22,18 +22,20 @@ FAILURES!!! Tests run: 2, Failures: 2
 
 The failure-inducing input was from attempting to merge {"a","b"}+{"x","y"} and {"a","b","c"}+{"c","d","e"} from both test cases. The last command that I ran was bash test.sh which produced this error as well. I'm not sure why there is an error with the expected "x" and actual "a" when it passed for the first {"a","b"} list. 
 
-### TA Response
+## TA Response
 Hi Royce! You're on the right track, from what you know of the expected values and the resulting ones, do you think the next elements in the two lists would be the same as well? If not, what would they be and what would that say about your code?
 
-### Student terminal output
-```bash test.sh```
+## Student terminal output
 JUnit version 4.13.2
+
 ..
+
 Time: 0.02
+
 
 OK (2 tests)
 
-### File/Directory Structure and File contents
+## File/Directory Structure and File contents
 lab7/
 |- ListExamples.java
 
@@ -130,11 +132,11 @@ public class ListExamplesTests {
 ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
 ```
-#### full command line to trigger the bug
+### Full Command Line to Trigger the Bug:
 ```bash test.sh```
 
-#### what to edit to fix the bug
+### To Fix the Bug:
 In order to fix the bug the list1 and list2 need to be switched from the line ```result.add(list2.get(index1));``` to the code ```result.add(list1.get(index1));``` and in the same way for the line ```result.add(list1.get(index2));``` should be changed to ```result.add(list2.get(index2));``` 
 
-### Reflection:
+## Reflection:
 Something that I learned from my lab experience in the second half of this quarter that I didn't know before was how the backend of websites that we use on the daily are coded. I was especially interested in how we were able to mimick Autograder in how it uses bash to efficiently test the code of numerous students at once.
