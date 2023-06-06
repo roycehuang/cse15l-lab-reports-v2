@@ -37,6 +37,7 @@ OK (2 tests)
 
 ## File/Directory Structure and File contents
 lab7/
+
 |- ListExamples.java
 
 |- ListExamplesTests.java
