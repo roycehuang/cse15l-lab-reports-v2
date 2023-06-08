@@ -1,5 +1,6 @@
 # Lab Report 5
 due date: Monday June 5, 2023
+
 access using: https://roycehuang.github.io/cse15l-lab-reports-v2/LabReport5.html
 
 ## Student EdStem Debugging Question
